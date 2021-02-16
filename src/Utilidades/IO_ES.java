@@ -12,10 +12,12 @@ public class IO_ES {
     public static int leerInterger() {
 
         int dato = 0;
-        try {
-            System.out.println("Introducir un dato: ");
+        
+        System.out.println("Introducir un dato: ");
             Scanner teclado = new Scanner(System.in);
+        try {
             dato = teclado.nextInt();
+            
         } catch (Exception e) {
             System.out.println("ERROR: Valor no correcto.");
         }
